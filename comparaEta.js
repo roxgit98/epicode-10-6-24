@@ -8,14 +8,14 @@ class User {
 
   comparaEta(verificaEta) {
     if (this.age > verificaEta.age) {
-      console.log(this.age, "è più vecchio di", verificaEta.age);
+      return this.age + " è più vecchio di " + verificaEta.age;
     } else {
-      console.log(verificaEta.age, "è più vecchio di", this.age);
+      return verificaEta.age + " è più vecchio di " + this.age;
     }
   }
 }
 
-const utente1 = new User("aldo", "baglio", 42, "milano");
+const utente1 = new User("aldo", "baglio", 40, "milano");
 const utente2 = new User("michele", "micheluzzi", 41, "palermo");
 
 console.log(utente1.comparaEta(utente2));
